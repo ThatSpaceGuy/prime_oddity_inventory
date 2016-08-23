@@ -1,0 +1,15 @@
+Objective: Program that will help an oddities store search their inventory.
+
+Inputs:
+Size (small, medium, large)
+Color (see list in program)
+
+Output: text of anything in stock that fits description
+
+versioning plan:
+X hanshake between js and html
+X get user selection on button click (onClick tag on button element in ...)
+X select color
+search by size
+search by color
+search by both size and color
