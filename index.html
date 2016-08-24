@@ -36,16 +36,44 @@
     </select>
 
     <button onclick="searchInventory()">Search Inventory!</button>
+    <br>
 
+    <p>
+      Search our inventory based on item name:
+    </p>
+    <input id="nameIn" placeholder="Enter Item Name">
+    <button onclick="searchInventoryByName()">Search Inventory!</button>
     <br>
 
     <p>
       Add a new item to our inventory:
     </p>
+    <select id="newItemSize">
+      <option>Choose a Size</option>
+      <option>Small</option>
+      <option>Medium</option>
+      <option>Large</option>
+    </select>
 
-    <input id="newItemSize" placeholder="Enter Item Size">
-    <input id="newItemColor" placeholder="Enter Item Color">
+    <select id="newItemColor">
+      <option>Choose a Color</option>
+      <option>Black</option>
+      <option>Blue</option>
+      <option>Bus Seat Green</option>
+      <option>Emerald Green</option>
+      <option>Fuchsia</option>
+      <option>Mermaid Treasure</option>
+      <option>Orange</option>
+      <option>Purple</option>
+      <option>Red</option>
+      <option>Storm Cloud</option>
+      <option>Yellow Canary</option>
+    </select>
+    <!-- <input id="newItemSize" placeholder="Enter Item Size">
+    <input id="newItemColor" placeholder="Enter Item Color"> -->
     <input id="newItemName" placeholder="Enter Item Name">
     <button onclick="stockNewItem()">Add to Inventory!</button>
+
+
   </body>
 </html>
