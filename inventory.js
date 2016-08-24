@@ -51,6 +51,19 @@ var stockItem = function ( size, color, name ){
   inventory.push(newItem);
 }; // end stockItem
 
+var stockNewItem = function(){
+  console.log('in stockNewItem!');
+  var newSize = document.getElementById('newItemSize').value;
+  var newColor = document.getElementById('newItemColor').value;
+  var newName = document.getElementById('newItemName').value;
+
+  if (newSize != '' && newColor != '' && newName != '') {
+    stockItem(newSize, newColor, newName);
+    console.log('A brand new', newSize+',', newColor, newName, 'has been added to our inventory!');
+  } else {
+    console.log('Sorry! You need to enter values in all three fields, please.');
+  }
+}; // end stockNewItem
 
 /// ADD ITEMS ///
 // stockItem( '', '', '');

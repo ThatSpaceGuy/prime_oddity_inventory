@@ -8,8 +8,11 @@
     </script>
   </head>
   <body>
-    <h2>Inventory Example</h2>
-
+    <h1>Inventory Example</h1>
+    <h2>Welcome to our Oddities Store!</h2>
+    <p>
+      Search our inventory based on size and/or color preferences:
+    </p>
     <select id="sizeIn">
       <option>No Preference</option>
       <option>Small</option>
@@ -32,7 +35,17 @@
       <option>Yellow Canary</option>
     </select>
 
-    <button onclick="searchInventory()">Search Inventory</button>
+    <button onclick="searchInventory()">Search Inventory!</button>
 
+    <br>
+
+    <p>
+      Add a new item to our inventory:
+    </p>
+
+    <input id="newItemSize" placeholder="Enter Item Size">
+    <input id="newItemColor" placeholder="Enter Item Color">
+    <input id="newItemName" placeholder="Enter Item Name">
+    <button onclick="stockNewItem()">Add to Inventory!</button>
   </body>
 </html>
